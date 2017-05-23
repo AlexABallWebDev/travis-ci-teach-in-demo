@@ -4,3 +4,5 @@ php:
 
 notifications:
   email: false
+
+script: phpunit --bootstrap Calculator.php CalculatorTest.php
