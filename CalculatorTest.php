@@ -1,8 +1,6 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
-
-final class CalculatorTest extends TestCase {
+final class CalculatorTest extends PHPUnit_Framework_TestCase {
     public function testZeroPlusZeroIsZero() {
       //TODO call function instead of hardcoded zeroes.
       $this->assertEquals(0 + 0, 0);
