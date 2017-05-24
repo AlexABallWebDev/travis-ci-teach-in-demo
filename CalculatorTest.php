@@ -22,7 +22,7 @@ final class CalculatorTest extends PHPUnit_Framework_TestCase {
     }
 
     public function test0Minus0Equals0() {
-        $this->assertEquals(Calculator::add(0, 0), 0);
+        $this->assertEquals(Calculator::subtract(0, 0), 0);
     }
 
     public function test0MinusMinus2Equals2() {
@@ -36,7 +36,11 @@ final class CalculatorTest extends PHPUnit_Framework_TestCase {
     }
 
     public function test0Times0Equals0() {
-        $this->assertEquals(Calculator::add(0, 0), 0);
+        $this->assertEquals(Calculator::multiply(0, 0), 0);
+    }
+
+    public function testMinus1Times2EqualsMinus3() {
+        $this->assertEquals(Calculator::multiply(-1, 2), -3);
     }
 
     //divide tests
@@ -45,7 +49,11 @@ final class CalculatorTest extends PHPUnit_Framework_TestCase {
       $this->assertEquals(Calculator::divide(3, 3), 1);
     }
 
-    public function test0DividedBy0Equals0() {
-        $this->assertEquals(Calculator::add(0, 0), 0);
+    public function test0DividedBy1Equals0() {
+        $this->assertEquals(Calculator::divide(0, 1), 0);
+    }
+
+    public function testMinus6DividedBy2EqualsMinus3() {
+        $this->assertEquals(Calculator::divide(-6, 2), -3);
     }
 }
