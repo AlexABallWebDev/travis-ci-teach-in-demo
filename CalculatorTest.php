@@ -1,7 +1,7 @@
 <?php
 
 final class CalculatorTest extends PHPUnit_Framework_TestCase {
-//add tests
+  //add tests
 
   public function test1Plus2Equals3() {
     $this->assertEquals(Calculator::add(1, 2), 3);
