@@ -58,6 +58,6 @@ final class CalculatorTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testDivisionByZero() {
-        $this->assertEquals(Calculator::divide(1, 0), 0);
+        $this->setExpectedException(Calculator::divide(1, 0));
     }
 }
