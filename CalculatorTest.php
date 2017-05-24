@@ -58,7 +58,7 @@ final class CalculatorTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testDivisionByZero() {
-        $this->setExpectedException(DivisionByZeroError::class);
+        $this->setExpectedException(DivisionByZeroError);
 
         Calculator::divide(1, 0);
     }
