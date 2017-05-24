@@ -25,8 +25,8 @@ final class CalculatorTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(Calculator::add(0, 0), 0);
     }
 
-    public function test0MinusMinus2EqualsMinus2() {
-        $this->assertEquals(Calculator::subtract(0, -2), -2);
+    public function test0MinusMinus2Equals2() {
+        $this->assertEquals(Calculator::subtract(0, -2), 2);
     }
 
     //multiply tests
