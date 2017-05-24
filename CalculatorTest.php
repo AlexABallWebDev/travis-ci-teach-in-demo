@@ -56,10 +56,4 @@ final class CalculatorTest extends PHPUnit_Framework_TestCase {
     public function testMinus6DividedBy2EqualsMinus3() {
         $this->assertEquals(Calculator::divide(-6, 2), -3);
     }
-
-    public function testDivisionByZero() {
-        $this->setExpectedException(PHPUnit_Framework_Error::class);
-
-        Calculator::divide(1, 0);
-    }
 }
