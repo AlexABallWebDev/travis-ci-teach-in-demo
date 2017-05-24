@@ -26,6 +26,6 @@ final class CalculatorTest extends PHPUnit_Framework_TestCase {
     //divide tests
 
     public function test3DividedBy3Equals1() {
-      $this->assertEquals(Calculator::multiply(1, 2), 1);
+      $this->assertEquals(Calculator::multiply(3, 3), 1);
     }
 }
